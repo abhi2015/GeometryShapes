@@ -1,9 +1,16 @@
-#A rectangle class which has length and breadth as a rectangle's attributes and calculates the area and the perimeter of the rectangle
+#A rectangle class which has length and breadth as a rectangle's attributes and calculates the area and the perimeter of the rectangle.
 class Rectangle
 	
-	def initialize(length, breadth)
-		@length, @breadth = length, breadth
-	end
+	
+  
+  def initialize(length, breadth)  
+    @length = length
+    @breadth = breadth
+  end
+
+  def self.new_Square(side)
+  	self.new(side,side)
+  end
 
 	def perimeter
 		2 * (@length + @breadth)
@@ -14,3 +21,7 @@ class Rectangle
 	end
 
 end
+
+
+
+
